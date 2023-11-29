@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+	
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.site-title {
+    margin-left: 20px;
+    font-size: 1.2em; 
+    font-weight: bold; 
+    color: white; 
+    cursor: pointer;
+}
+
+.site-title:hover {
+    color: #ffcc00;
+}
+
+
+.navbar ul {
+    list-style: none;
+    display: flex;    
+}
+
+.navbar li {
+    margin-right: 40px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #ffcc00;
+}
+.news {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    
+}
+
+.grid-item {
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+article {
+    
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    float: left;
+    margin-right: 20px; 
+}
+
+article:nth-child(2n+2) {
+    clear: both;
+}
+
+article h3 {
+    color: #333;
+}
+
+article p {
+    color: #666;
+}
+
+.read-more-button {
+    display: inline-block;
+    background-color: #800000	;
+    color: white;
+    text-decoration: none;
+}
+
+.read-more-button:hover {
+    background-color: #2980b9;
+}
+
+.article-buttons {
+    display: flex;
+    justify-content: flex-start;
+}
+
+input {
+  	width: 100%;
+  	height: 50px;
+  	padding: 12px 20px;
+  	box-sizing: border-box;
+  	border: 2px solid #ccc;
+  	border-radius: 4px;
+  	background-color: #f8f8f8;
+  	resize: none;
+}
+
+textarea {
+  	width: 100%;
+  	height: 150px;
+  	padding: 12px 20px;
+  	box-sizing: border-box;
+  	border: 2px solid #ccc;
+  	border-radius: 4px;
+  	background-color: #f8f8f8;
+  	resize: none;
+}
+
+.button-container {
+	width: 50%;
+    display: flex;
+    margin-top: 10px;
+}
+
+.update-button {
+    width: 10px; 
+    margin-right: 10px; 
+}
+
+.delete-button {
+    width: 10px;
+}
+
